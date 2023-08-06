@@ -100,8 +100,6 @@ a#ms:hover {
     background-color: rgba(82, 82, 82, 0.664);
 }
 
-
-
 div#secret > p > a {
     display: none;
 
@@ -120,6 +118,7 @@ div#secret:hover > p > a{
     border-radius: 5px;
     text-decoration: none;
 }
+
 
 @media screen and (max-width: 768px) {
 
