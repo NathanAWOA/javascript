@@ -132,3 +132,25 @@ input:focus {
 #register-form input[type="submit"]:hover {
     opacity: 1.5;
 }
+
+#register-form #copy {
+    background-color: #81d340;
+    color: #fff;
+    opacity: .8;
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 1.4rem;
+    max-width: 150px;
+    cursor: pointer;
+    align-self: flex-end;
+    margin-top: 20px;
+}
+
+#register-form #copy:hover {
+    opacity: 1.5;
+}
+
+#register-form #copy:active {
+    transform: translateY(5px);
+    
+}

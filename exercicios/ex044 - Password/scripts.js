@@ -2,6 +2,7 @@
 
 const generatePasswordButton = document.querySelector("#generate-password");
 const generatedPasswordElement = document.querySelector("#generated-password");
+const btnCopy = document.querySelector('#copy')
 
 // functions
 
@@ -58,14 +59,20 @@ const generatePassword = (getLetterLowerCase, getLetterUpperCase, getNumber, get
     generatedPasswordElement.style.display = "block";
     generatedPasswordElement.querySelector("h4").innerText = password;
 
+    //botão de copiar
+    btnCopy.addEventListener('click', () => {
+        btnCopy.innerText = ''
+        navigator.clipboard.writeText(password);
+        btnCopy.innerText = "Copiado"
+    })
+
 };
 
 // events
 
 // butão de geração de senhas
 generatePasswordButton.addEventListener("click", () => {
-    
-    
+    btnCopy.innerText = "Copiar Senha"
     generatePassword(
         
         getLetterLowerCase,
